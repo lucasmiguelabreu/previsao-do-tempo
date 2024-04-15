@@ -19,3 +19,9 @@ function putScreen(data) {
 
     document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"
 }
+
+document.querySelector(".input-city").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        buttonClick();
+    }
+});
