@@ -25,3 +25,9 @@ document.querySelector(".input-city").addEventListener("keyup", function(event) 
         buttonClick();
     }
 });
+
+document.addEventListener("keyup", function(event) {
+    if (event.key === "Escape") {
+        location.reload();
+    }
+});
